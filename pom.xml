@@ -12,6 +12,7 @@
         <module>microservice-simple-provider-user</module>
         <module>microservice-simpl-consumer-movie</module>
         <module>microservice-discovery-eureka</module>
+        <module>microservice-provider-user</module>
     </modules>
 
     <properties>
