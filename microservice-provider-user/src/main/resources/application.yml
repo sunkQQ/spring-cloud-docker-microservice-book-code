@@ -20,9 +20,9 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://admin:123456@localhost:8761/eureka/
   instance:
-    # 将自己的学注册到Eureka Server
+    # 将自己的ip注册到Eureka Server
     prefer-ip-address: true
 
 
