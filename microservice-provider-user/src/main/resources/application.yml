@@ -21,6 +21,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://admin:123456@localhost:8761/eureka/
+    healthcheck:
+      enabled: true
   instance:
     # 将自己的ip注册到Eureka Server
     prefer-ip-address: true
@@ -33,6 +35,8 @@ logging:
     org.hibernate: info
     org.hibernate.type.descriptor.sql.BasicBinder: trace
     org.hibernate.type.descripter.sql.BasicExtractor: trace
+    # 开启这边的日志，可以打印出spring查找网卡的过程
+    org.springframework.cloud.commons.util.InetUtils: trace
 
 # Actuator
 management:
