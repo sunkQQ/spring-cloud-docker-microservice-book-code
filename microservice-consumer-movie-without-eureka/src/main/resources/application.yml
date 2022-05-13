@@ -5,9 +5,7 @@ spring:
   application:
     name: microservice-consumer-movie
 
-microservice-provider-user:
+microservice-porvider-user:
   ribbon:
+    # 用于为名为microservice-provider-user的Ribbon客户端设置请求的地址列表
     listOfServers: localhost:8000, localhost:8001
-
-user:
-  userServiceUrl: http://localhost:8000/
