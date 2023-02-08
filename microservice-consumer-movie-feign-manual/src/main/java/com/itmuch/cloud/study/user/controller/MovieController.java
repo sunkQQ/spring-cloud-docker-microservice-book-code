@@ -29,6 +29,7 @@ public class MovieController {
 
 	@Autowired
 	public MovieController(Decoder decoder, Encoder encoder, Client client, Contract contract) {
+		// 这边的decoder、encoder、client、contract，可以Debug看看是什么实例
 		this.userUserFeignClient = Feign.builder().client(client).encoder(encoder).decoder(decoder).contract(contract)
 				.requestInterceptor(new BasicAuthRequestInterceptor("user", "password1"))
 				.target(UserFeignClient.class, "http://microservice-provider-user/");
