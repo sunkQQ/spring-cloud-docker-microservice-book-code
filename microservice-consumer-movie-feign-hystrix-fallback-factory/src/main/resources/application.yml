@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: microservice-consumer-movie
+    name: microservice-consumer-movie-feign-hystrix-fallback-factory
 
 eureka:
   client:
